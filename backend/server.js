@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: false }));
 module.exports = function (app) {
   app.use(
     createProxyMiddleware(["/api/goals", "/api/users"], {
-      target: "https://goal-setter-rest-api-backend.onrender.com",
+      target: "https://goal-setter-rest-api-2.onrender.com",
     })
   );
 };

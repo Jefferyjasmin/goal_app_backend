@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "/api/users/";
+const target = "https://goal-setter-rest-api-backend.onrender.com";
+const API_URL = target + "/api/users/";
 
 //////Register user
 
@@ -24,9 +25,9 @@ const login = async (userData) => {
   return response.data;
 };
 
-  const logout = async () => {
-    await localStorage.removeItem("user");
-  };
+const logout = async () => {
+  await localStorage.removeItem("user");
+};
 
 const authService = {
   register,
